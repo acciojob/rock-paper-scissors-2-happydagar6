@@ -1,2 +1,50 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
 
-/* Your CSS Code here. */
+.game-container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.controls, .weapons, .stats, .round-info, .game-info {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="number"] {
+  padding: 6px;
+  width: 60px;
+  margin-right: 10px;
+}
+
+span {
+  font-weight: bold;
+}
+
+p {
+  margin: 8px 0;
+}

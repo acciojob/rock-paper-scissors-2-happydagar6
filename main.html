@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+    
+    <div class="controls">
+      <label for="turns">Number of Turns:</label>
+      <input type="number" id="turns" data-ns-test="game-number" min="1">
+      <button data-ns-test="play-game">Play</button>
+    </div>
+
+    <div class="weapons">
+      <button data-ns-test="rock">Rock</button>
+      <button data-ns-test="paper">Paper</button>
+      <button data-ns-test="scissors">Scissors</button>
+    </div>
+
+    <div class="stats">
+      <p>Rounds Left: <span data-ns-test="rounds-left"></span></p>
+      <p>User Points: <span data-ns-test="user-points"></span></p>
+      <p>Computer Points: <span data-ns-test="computer-points"></span></p>
+    </div>
+
+    <div class="round-info">
+      <p>Computer chose: <span data-ns-test="computer-choose"></span></p>
+      <p>Round Result: <span data-ns-test="round-result"></span></p>
+    </div>
+
+    <div class="game-info">
+      <p>Game Result: <span data-ns-test="game-result"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
