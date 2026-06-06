@@ -40,11 +40,11 @@ function playRound(userChoiceIndex) {
   if (!isPlaying || turnsLeft <= 0) return;
 
   let compIndex;
-  if (typeof window.computerChoose === 'number' && window.computerChoose >= 0 && window.computerChoose <= 2) {
+  
+  if (window.computerChoose !== undefined && window.computerChoose !== null) {
     compIndex = window.computerChoose;
   } else {
     compIndex = Math.floor(Math.random() * 3);
-    window.computerChoose = compIndex;
   }
 
   computerChooseEl.innerText = choices[compIndex];
@@ -81,8 +81,6 @@ function playRound(userChoiceIndex) {
       gameResultEl.innerText = "TIE";
     }
   }
-
-  window.computerChoose = undefined;
 }
 
 rockBtn.addEventListener('click', () => playRound(0));
